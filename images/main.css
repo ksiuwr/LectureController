@@ -1,0 +1,178 @@
+
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+    margin: 40px;
+    width: 360px;
+}
+
+.logo_title {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+#organizer_logo img {
+    object-fit: cover;
+    height: 100px;
+}
+
+@keyframes logoFade {
+    0% {
+        opacity: 1;
+    }
+
+    32% {
+        opacity: 1;
+    }
+
+    34% {
+        opacity: 0;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    68% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes sponsorFade {
+    0% {
+        opacity: 0;
+    }
+
+    32% {
+        opacity: 0;
+    }
+
+    34% {
+        opacity: 1;
+    }
+
+    66% {
+        opacity: 1;
+    }
+
+    68% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.bottom {
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+    animation-name: sponsorFade;
+}
+
+.top {
+    position: absolute;
+    width: 310px;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+    animation-name: logoFade;
+}
+
+.logo img {
+    width: 310px;
+    margin: 10px 0;
+}
+
+#sponsor_logo .logo {
+    position: absolute;
+    width: 310px;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+    animation-name: sponsorFade;
+}
+
+#sponsor_logo .first {
+    animation-delay: 0s;
+    opacity: 0;
+}
+
+#sponsor_logo .second {
+    opacity: 1;
+    animation-delay: 20s;
+}
+
+#sponsor_logo .third {
+    animation-delay: 40s;
+    opacity: 0;
+}
+
+#ppg {
+    width: 210px;
+    margin: 10px 50px;
+}
+
+.title_bar {
+    position: absolute;
+    padding: 10px;
+    left: 400px;
+    top: 855px;
+    width: 1500px;
+    height: 205px;
+}
+
+.event {
+    font-size: 40px;
+    display: table-row;
+    border-bottom: solid white 6mm;
+}
+  
+.event .hour {
+    border-left: 4px solid black;
+    width: 80mm;
+    padding-left: 2mm;
+    display: table-cell;
+    vertical-align: top;
+    float: left;
+    font-weight: 400;
+}
+  
+.event .lecturer_and_title {
+    vertical-align: top;
+    display: table-cell;
+    width: 100%;
+    font-weight: 300;
+}
+
+.event_table {
+    width: 80%;
+    margin: 40px;
+    display: table;
+    border-collapse: collapse;
+}
+
+.camera_placeholder {
+    position: absolute;
+    left: 0;
+    top: 780px;
+    height: 300px;
+    width: 400px;
+    background-color: black;
+}
+
+.no_camera {
+    margin: 110px 65px;
+    font-size: 50px;
+    font-weight: 200;
+    color: white;
+}

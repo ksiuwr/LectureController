@@ -1,0 +1,62 @@
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="zosia_20_black (1).svg"> 
+        </div>
+        <div class="logo_title">
+            Organizatorzy:
+        </div>
+        <div class="logo" id="organizer_logo">
+            <img class="top" src="Logo_KSI.svg">
+            <img class="bottom" src="Logo_UWr.svg">
+        </div>
+        <div class="logo_title">
+            Sponsorzy:
+        </div>
+        <div id="sponsor_logo">
+            <div class="first logo">
+                <img src="Siemens_logo.svg">
+                <img id="ppg" src="ppg_logo.svg">
+            </div>
+            <div class="second logo">
+                <img src="TSG_logotyp_RED.svg">
+                <img src="logo-fingo.svg">
+            </div>
+            <div class="third logo">
+                <img src="logo_AVS_ai.svg">
+                <img src="quantup_logo.svg">
+                <img src="qed-logo-byline.svg">
+            </div>
+        </div>
+    </div>
+
+    <div class="title_bar">
+        <div class="event_table">
+
+        <div class="event">
+            <div id="time" class="hour">
+                22:15:48
+            </div>
+            <div class="lecturer_and_title">
+                Parę obrazków z historii ZOSI <br/>
+                <i> Jerzy Marcinkowski </i>
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+    <div class="camera_placeholder">
+        <div class="no_camera">Brak kamery </div>
+    </div>
+
+    <script>
+        const time = document.getElementById("time");
+        setInterval(() => time.innerText = (new Date()).toLocaleTimeString(), 1000);
+    </script>
+</body>
